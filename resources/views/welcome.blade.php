@@ -20,36 +20,79 @@
             font-family: 'Poppins', sans-serif;
             font-weight: 900;
         }
+
+        .video {
+            height: 500px;
+            padding: 50px 0px;
+        }
+
+        .video video {
+            min-height: 100%;
+            position: fixed;
+            top: 0;
+            z-index: -999;
+        }
     </style>
 </head>
 
 <body class="bg-green-100 text-gray-800">
 
     <!-- Bagian Header -->
-    <header class="text-white py-4 fixed top-0 w-full z-50" style="backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);">
+    <header class="text-white py-4 fixed top-0 w-full z-50 bg-opacity-75" style="backdrop-filter: blur(50px); -webkit-backdrop-filter: blur(20px);">
         <div class="container mx-auto flex justify-between items-center px-4">
-            <h1 class="text-3xl font-bold">Agro Malang</h1>
-            <nav class="flex space-x-4">
+            <a href="#" class="flex items-center">
+                <img src="{{asset('images/logo.png')}}" alt="Logo Agro Malang" class="w-[70px] mr-2">
+            </a>
+            <nav class="hidden md:flex space-x-4">
                 <a href="#tentang" class="hover:underline">Tentang</a>
                 <a href="#fitur" class="hover:underline">Fitur</a>
                 <a href="#produk" class="hover:underline">Produk</a>
                 <a href="#footer" class="hover:underline">Kontak</a>
                 <button class="bg-orange-500 px-4 py-2 rounded text-white">Bergabung Sekarang</button>
             </nav>
+            <!-- Menu button for mobile view -->
+            <button id="menu-button" class="md:hidden flex items-center px-3 py-2 border rounded text-white border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0zM0 7h20v2H0zM0 11h20v2H0z" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#tentang" class="block px-4 py-2 hover:underline">Tentang</a>
+            <a href="#fitur" class="block px-4 py-2 hover:underline">Fitur</a>
+            <a href="#produk" class="block px-4 py-2 hover:underline">Produk</a>
+            <a href="#footer" class="block px-4 py-2 hover:underline">Kontak</a>
+            <button class="bg-orange-500 w-full px-4 py-2 rounded text-white">Bergabung Sekarang</button>
         </div>
     </header>
 
+    <script>
+        // JavaScript for toggling the mobile menu
+        document.getElementById('menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+
     <!-- Bagian Hero -->
-    <section class="relative bg-green-900 text-white h-screen pt-16">
-        <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full">
-            <source src="{{ asset('images/video.mp4') }}" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="absolute inset-0 bg-green-900 opacity-60"></div> <!-- Latar belakang hijau -->
-        <div class="container mx-auto flex flex-col justify-center items-center text-center h-full relative z-10">
-        <h2 class="text-6xl font-bold">Selamat Datang di Agro Malang</h2>
-        <h2 class="mt-4 text-lg"><span class="typed-text"></span></h2>
+
+    <section class="relative text-white h-screen pt-16">
+        <div class="video">
+            <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full">
+                <source src="{{ asset('images/video.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="absolute inset-0 bg-green-900 opacity-60"></div> <!-- Latar belakang hijau -->
+            <div class="container mx-auto flex flex-col justify-center items-center text-center h-full relative z-10">
+                <h2 class="text-6xl font-bold">Selamat Datang di Agro Malang</h2>
+                <p class="mt-4 text-lg">Menghubungkan petani lokal dengan konsumen untuk produk pertanian khas Malang.</p>
+            </div>
         </div>
     </section>
 
