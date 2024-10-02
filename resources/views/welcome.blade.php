@@ -38,35 +38,36 @@
 <body class="bg-green-100 text-gray-800">
 
     <!-- Bagian Header -->
-    <header class="text-white py-4 fixed top-0 w-full z-50 bg-opacity-75" style="backdrop-filter: blur(50px); -webkit-backdrop-filter: blur(20px);">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <a href="#" class="flex items-center">
-                <img src="{{asset('images/logo.png')}}" alt="Logo Agro Malang" class="w-[70px] mr-2">
-            </a>
-            <nav class="hidden md:flex space-x-4">
-                <a href="#tentang" class="hover:underline">Tentang</a>
-                <a href="#fitur" class="hover:underline">Fitur</a>
-                <a href="#produk" class="hover:underline">Produk</a>
-                <a href="#footer" class="hover:underline">Kontak</a>
-                <button class="bg-orange-500 px-4 py-2 rounded text-white">Bergabung Sekarang</button>
-            </nav>
-            <!-- Menu button for mobile view -->
-            <button id="menu-button" class="md:hidden flex items-center px-3 py-2 border rounded text-white border-white">
-                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <title>Menu</title>
-                    <path d="M0 3h20v2H0zM0 7h20v2H0zM0 11h20v2H0z" />
-                </svg>
-            </button>
-        </div>
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden">
-            <a href="#tentang" class="block px-4 py-2 hover:underline">Tentang</a>
-            <a href="#fitur" class="block px-4 py-2 hover:underline">Fitur</a>
-            <a href="#produk" class="block px-4 py-2 hover:underline">Produk</a>
-            <a href="#footer" class="block px-4 py-2 hover:underline">Kontak</a>
-            <button class="bg-orange-500 w-full px-4 py-2 rounded text-white">Bergabung Sekarang</button>
-        </div>
-    </header>
+    <header id="navbar" class="text-white py-4 fixed top-0 w-full z-50 bg-opacity-75 transition-all duration-300">
+    <div class="container mx-auto flex justify-between items-center px-4">
+        <a href="#" class="flex items-center">
+            <img src="{{asset('images/logo.png')}}" alt="Logo Agro Malang" class="w-[70px] mr-2">
+        </a>
+        <nav class="hidden md:flex space-x-4">
+            <a href="#tentang" class="hover:underline">Tentang</a>
+            <a href="#fitur" class="hover:underline">Fitur</a>
+            <a href="#produk" class="hover:underline">Produk</a>
+            <a href="#footer" class="hover:underline">Kontak</a>
+            <button class="bg-orange-500 px-4 py-2 rounded text-white">Bergabung Sekarang</button>
+        </nav>
+        <!-- Menu button for mobile view -->
+        <button id="menu-button" class="md:hidden flex items-center px-3 py-2 border rounded text-white border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0zM0 7h20v2H0zM0 11h20v2H0z" />
+            </svg>
+        </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center text-center">
+        <a href="#tentang" class="block w-full px-4 py-2 hover:underline">Tentang</a>
+        <a href="#fitur" class="block w-full px-4 py-2 hover:underline">Fitur</a>
+        <a href="#produk" class="block w-full px-4 py-2 hover:underline">Produk</a>
+        <a href="#footer" class="block w-full px-4 py-2 hover:underline">Kontak</a>
+        <button class="bg-orange-500 w-full px-4 py-2 rounded text-white">Bergabung Sekarang</button>
+    </div>
+</header>
+
 
     <script>
         // JavaScript for toggling the mobile menu
@@ -165,6 +166,17 @@
         typeSpeed: 50,
         backSpeed: 25,
         loop: true
+    });
+
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 0) {
+            navbar.style.backdropFilter = 'blur(50px)';
+            navbar.style.webkitBackdropFilter = 'blur(50px)';  // Untuk browser WebKit
+        } else {
+            navbar.style.backdropFilter = 'none';
+            navbar.style.webkitBackdropFilter = 'none';  // Untuk browser WebKit
+        }
     });
 </script>
 
