@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro Malang</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&family=Playfair+Display:wght@900&display=swap');
 
@@ -80,6 +81,7 @@
     </script>
 
     <!-- Bagian Hero -->
+
     <section class="relative text-white h-screen pt-16">
         <div class="video">
             <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full">
@@ -157,5 +159,14 @@
     </footer>
 
 </body>
+<script>
+  var typed = new Typed('.typed-text', {
+    strings: ["Menghubungkan petani lokal dengan konsumen untuk produk pertanian khas Malang."],
+    typeSpeed: 50,
+    backSpeed: 25,
+    loop: true
+  });
+</script>
+
 
 </html>
