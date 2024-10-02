@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Malang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@900&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body class="bg-green-100 text-gray-800">
+
+    <!-- Bagian Header -->
+    <header class="bg-green-900 text-white py-4 fixed top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-3xl font-bold">Agro Malang</h1>
+            <nav class="flex space-x-4">
+                <a href="#tentang" class="hover:underline">Tentang</a>
+                <a href="#fitur" class="hover:underline">Fitur</a>
+                <a href="#produk" class="hover:underline">Produk</a>
+                <a href="#footer" class="hover:underline">Kontak</a>
+                <button class="bg-orange-500 px-4 py-2 rounded text-white">Bergabung Sekarang</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Bagian Hero -->
+    <section class="relative bg-green-800 text-white h-screen pt-16">
+        <img src="https://images.unsplash.com/photo-1526400664107-1245b50710f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGFncmljdWx0dHVyZSUyMGxhbmRpbmd8ZW58MHx8fHwxNjY3MTAzMzY0&ixlib=rb-1.2.1&q=80&w=1080" alt="Gambar Agro Malang" class="absolute inset-0 object-cover w-full h-full opacity-50">
+        <div class="container mx-auto flex flex-col justify-center items-center text-center h-full relative z-10">
+            <h2 class="text-6xl font-bold">Selamat Datang di Agro Malang</h2>
+            <p class="mt-4 text-lg">Menghubungkan petani lokal dengan konsumen untuk produk pertanian khas Malang.</p>
+        </div>
+    </section>
+
+    <!-- Bagian Tentang -->
+    <section id="tentang" class="py-16 bg-white h-screen">
+        <div class="container mx-auto text-center h-full flex flex-col justify-center">
+            <h3 class="text-4xl font-bold mb-4">Tentang Agro Malang</h3>
+            <p class="text-lg max-w-2xl mx-auto">Agro Malang adalah platform komunitas yang berfokus pada menghubungkan petani lokal dengan konsumen dan mempromosikan produk pertanian khas Malang, seperti apel, sayuran, dan kopi.</p>
+        </div>
+    </section>
+
+    <!-- Bagian Fitur -->
+    <section id="fitur" class="py-16 bg-green-100 h-screen">
+        <div class="container mx-auto text-center h-full flex flex-col justify-center">
+            <h3 class="text-4xl font-bold mb-8">Fitur Unggulan</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-4 bg-white rounded-lg shadow">
+                    <h4 class="text-2xl font-semibold">Direct Farm to Table</h4>
+                    <p class="mt-2">Beli langsung dari petani dan nikmati produk segar tanpa perantara.</p>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow">
+                    <h4 class="text-2xl font-semibold">Tutorial Pertanian Modern</h4>
+                    <p class="mt-2">Dapatkan tips dan tutorial untuk bertani yang terintegrasi dengan tradisi lokal.</p>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow">
+                    <h4 class="text-2xl font-semibold">Virtual Farm Tour</h4>
+                    <p class="mt-2">Kunjungi kebun apel dan ladang pertanian secara virtual untuk pengalaman edukatif.</p>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow">
+                    <h4 class="text-2xl font-semibold">Penilaian Keberlanjutan</h4>
+                    <p class="mt-2">Dapatkan informasi tentang praktik pertanian ramah lingkungan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Produk -->
+    <section id="produk" class="py-16 bg-white h-screen">
+        <div class="container mx-auto text-center h-full flex flex-col justify-center">
+            <h3 class="text-4xl font-bold mb-8">Produk Kami</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1567311988109-0e8a7b50c17f" alt="Produk Apel" class="w-full h-64 object-cover rounded-lg">
+                    <p class="mt-4">Apel Malang yang segar dan juicy.</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1506703512028-e9df14d4d9d4" alt="Produk Sayuran" class="w-full h-64 object-cover rounded-lg">
+                    <p class="mt-4">Sayuran organik dari petani lokal.</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1504164643012-e1e7de28d0c3" alt="Produk Kopi" class="w-full h-64 object-cover rounded-lg">
+                    <p class="mt-4">Kopi khas Malang dengan cita rasa yang khas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Footer -->
+    <footer id="footer" class="bg-green-900 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Agro Malang. Semua hak cipta dilindungi.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
