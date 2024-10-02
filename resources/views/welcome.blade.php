@@ -91,7 +91,7 @@
             <div class="absolute inset-0 bg-green-900 opacity-60"></div> <!-- Latar belakang hijau -->
             <div class="container mx-auto flex flex-col justify-center items-center text-center h-full relative z-10">
                 <h2 class="text-6xl font-bold">Selamat Datang di Agro Malang</h2>
-                <p class="mt-4 text-lg">Menghubungkan petani lokal dengan konsumen untuk produk pertanian khas Malang.</p>
+                <h2 class="mt-4 text-lg"><span class="typed-text"></span></h2>
             </div>
         </div>
     </section>
@@ -160,12 +160,12 @@
 
 </body>
 <script>
-  var typed = new Typed('.typed-text', {
-    strings: ["Menghubungkan petani lokal dengan konsumen untuk produk pertanian khas Malang."],
-    typeSpeed: 50,
-    backSpeed: 25,
-    loop: true
-  });
+    var typed = new Typed('.typed-text', {
+        strings: ["Menghubungkan petani lokal dengan konsumen untuk produk pertanian khas Malang."],
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: true
+    });
 </script>
 
 
