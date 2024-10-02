@@ -7,7 +7,7 @@
     <title>Agro Malang</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&family=Playfair+Display:wght@900&display=swap');
 
         body {
             font-family: 'Poppins', sans-serif;
@@ -16,7 +16,7 @@
         h1,
         h2,
         h3 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Poppins', sans-serif;
             font-weight: 900;
         }
     </style>
@@ -25,7 +25,8 @@
 <body class="bg-green-100 text-gray-800">
 
     <!-- Bagian Header -->
-    <header class="bg-green-900 text-white py-4 fixed top-0 w-full z-50">
+    <header class="text-white py-4 fixed top-0 w-full z-50" style="backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);">
         <div class="container mx-auto flex justify-between items-center px-4">
             <h1 class="text-3xl font-bold">Agro Malang</h1>
             <nav class="flex space-x-4">
@@ -39,13 +40,18 @@
     </header>
 
     <!-- Bagian Hero -->
-    <section class="relative bg-green-800 text-white h-screen pt-16">
-        <img src="https://images.unsplash.com/photo-1526400664107-1245b50710f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGFncmljdWx0dHVyZSUyMGxhbmRpbmd8ZW58MHx8fHwxNjY3MTAzMzY0&ixlib=rb-1.2.1&q=80&w=1080" alt="Gambar Agro Malang" class="absolute inset-0 object-cover w-full h-full opacity-50">
+    <section class="relative bg-green-900 text-white h-screen pt-16">
+        <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full">
+            <source src="{{ asset('images/video.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="absolute inset-0 bg-green-900 opacity-60"></div> <!-- Latar belakang hijau -->
         <div class="container mx-auto flex flex-col justify-center items-center text-center h-full relative z-10">
             <h2 class="text-6xl font-bold">Selamat Datang di Agro Malang</h2>
             <p class="mt-4 text-lg">Menghubungkan petani lokal dengan konsumen untuk produk pertanian khas Malang.</p>
         </div>
     </section>
+
 
     <!-- Bagian Tentang -->
     <section id="tentang" class="py-16 bg-white h-screen">
