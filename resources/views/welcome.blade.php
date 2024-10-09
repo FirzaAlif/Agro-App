@@ -38,25 +38,18 @@
 <body class="bg-green-100 text-gray-800">
 
     <!-- Bagian Header -->
-    <header id="navbar" class="text-white py-4 fixed top-0 w-full z-50 bg-opacity-75 transition-all duration-300">
-    <div class="container mx-auto flex justify-between items-center px-4">
+    <header id="navbar" class="text-white py-4 fixed top-0 w-full z-50 bg-opacity-75 backdrop-blur-lg transition-all duration-300">
+    <div class="container max-w-5xl mx-auto flex justify-between items-center px-6 py-2 bg-white bg-opacity-10 backdrop-blur-md" style="border-radius: 20px;">
         <a href="#" class="flex items-center">
-            <img src="{{asset('images/logo.png')}}" alt="Logo Agro Malang" class="w-[70px] mr-2">
+            <img src="{{asset('images/logo.png')}}" alt="Logo Agro Malang" class="w-[50px] mr-4">
         </a>
-        <nav class="hidden md:flex space-x-4">
+        <nav class="hidden md:flex space-x-6 text-lg">
             <a href="#tentang" class="hover:underline">Tentang</a>
             <a href="#fitur" class="hover:underline">Fitur</a>
             <a href="#produk" class="hover:underline">Produk</a>
             <a href="#footer" class="hover:underline">Kontak</a>
-            <button class="bg-orange-500 px-4 py-2 rounded text-white">Bergabung Sekarang</button>
         </nav>
-        <!-- Menu button for mobile view -->
-        <button id="menu-button" class="md:hidden flex items-center px-3 py-2 border rounded text-white border-white">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <title>Menu</title>
-                <path d="M0 3h20v2H0zM0 7h20v2H0zM0 11h20v2H0z" />
-            </svg>
-        </button>
+        <button class="bg-orange-500 px-4 py-2 rounded hover:rounded-full text-white">Profile</button>
     </div>
     <!-- Mobile menu -->
     <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center text-center">
@@ -67,6 +60,8 @@
         <button class="bg-orange-500 w-full px-4 py-2 rounded text-white">Bergabung Sekarang</button>
     </div>
 </header>
+
+
 
 
     <script>
@@ -171,8 +166,8 @@
     window.addEventListener('scroll', function() {
         const navbar = document.getElementById('navbar');
         if (window.scrollY > 0) {
-            navbar.style.backdropFilter = 'blur(50px)';
-            navbar.style.webkitBackdropFilter = 'blur(50px)';  // Untuk browser WebKit
+            navbar.style.backdropFilter = 'blur(0px)';
+            navbar.style.webkitBackdropFilter = 'blur(0px)';  // Untuk browser WebKit
         } else {
             navbar.style.backdropFilter = 'none';
             navbar.style.webkitBackdropFilter = 'none';  // Untuk browser WebKit
