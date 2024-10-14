@@ -2,14 +2,15 @@ const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
 
-menuBtn.addEventListener("click", () => {
+menuBtn.addEventListener("click", (e) => {
     const isOpen = navLinks.classList.contains("open");
     menuBtnIcon.setAttribute("class", isOpen ? "ri-menu-line" : "ri-close-line");
 
     if (isOpen) {
         // Tambahkan animasi close dan hapus class open setelah animasi selesai
         navLinks.classList.add("close");
-        navLinks.addEventListener("animationend", () => {
+        navLinks.addEventListener(
+            "animationend", (e) => {
             navLinks.classList.remove("open");
             navLinks.classList.remove("close");
         }, { once: true });
@@ -19,7 +20,7 @@ menuBtn.addEventListener("click", () => {
     }
 });
 
-navLinks.addEventListener("click", () => {
+navLinks.addEventListener("click", (e) => {
     navLinks.classList.remove("open");
     menuBtnIcon.setAttribute("class", "ri-menu-line")
 });
@@ -30,20 +31,45 @@ const scrollRevealOption =  {
     duration: 1000,
 };
 
-ScrollReveal().reveal(".header_container .section_subheader", {
+ScrollReveal().reveal(".header__container .section__subheader", {
     ...scrollRevealOption,
 });
-ScrollReveal().reveal(".header_container .section_header", {
+ScrollReveal().reveal(".header__container .section__header", {
     ...scrollRevealOption,
     delay: 500,
 });
-ScrollReveal().reveal(".header_container .section_btn", {
+ScrollReveal().reveal(".header__container .scroll__btn", {
     ...scrollRevealOption,
     delay: 1000,
 });
-ScrollReveal().reveal(".header_container .section_header", {
+ScrollReveal().reveal(".header__container .header__socials", {
     ...scrollRevealOption,
     origin: "left",
     delay: 1500,
+});
+
+ScrollReveal().reveal(".about__image-1, .about__image-3", {
+    ...scrollRevealOption,
+    origin: "right",
+});
+ScrollReveal().reveal(".about__image-2", {
+    ...scrollRevealOption,
+    origin: "left",
+});
+ScrollReveal().reveal(".about__content .section__subheader", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+ScrollReveal().reveal(".about__content .section__header", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+ScrollReveal().reveal(".about__content p", {
+    ...scrollRevealOption,
+    delay: 1500,
+});
+ScrollReveal().reveal(".about__content .about__btn", {
+    ...scrollRevealOption,
+    delay: 2000,
 });
 
