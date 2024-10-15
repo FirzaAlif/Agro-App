@@ -77,7 +77,7 @@
              </div>
          </div>
          <div class="about__image about__image-2" id="equipment">
-             <img src="{{asset('images/tani.jpg')}}" alt="about" />
+             <img src="{{asset('images/tractor.webp')}}" alt="about" />
          </div>
          <div class="about__content about__content-2">
              <h3 class="section__subheader">HIKING ESSENTIALS</h3>
@@ -98,7 +98,7 @@
              </div>
          </div>
          <div class="about__image about__image-3" id="blog">
-             <img src="{{asset('images/tani.jpg')}}" alt="about" />
+             <img src="{{asset('images/sawah.webp')}}" alt="about" />
          </div>
          <div class="about__content about__content-3">
              <h3 class="section__subheader">WHERE YOU GO IS THE KEY</h3>
