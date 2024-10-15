@@ -29,10 +29,11 @@
                         <i class="ri-menu-line"></i>
                     </div>
                     <div class="nav__action__btn">
-                        <button class="btn">
+                        <a href="{{ route('login') }}" class="btn">
                             <span><i class="ri-user-line"></i></span> Account
-                        </button>
+                        </a>
                     </div>
+
                 </div>
             </nav>
             <div class="section__container header__container">
@@ -41,7 +42,7 @@
                     <h1 class="section__header">Menghubungkan petani lokal dengan konsumen untuk produk pertanian khas Malang</h1>
                     <div class="scroll__btn">
                         <a href="#about">
-                            Scroll down
+                            Scroll For More
                             <span><i class="ri-arrow-down-line"></i></span>
                         </a>
                     </div>
@@ -104,7 +105,7 @@
             <h3 class="section__subheader">Keunggulan Lahan</h3>
             <h2 class="section__header">Lahan Yang Berkualitas</h2>
             <p>
-            Malang terletak di wilayah pegunungan yang dikenal dengan tanahnya yang subur, berkat keberadaan gunung-gunung berapi yang memberikan nutrisi alami pada tanah. Ketinggian lahan tersebut, yang berkisar antara 700 hingga 2.000 meter di atas permukaan laut, menciptakan iklim sejuk dan ideal untuk budidaya tanaman-tanaman yang membutuhkan suhu dingin, seperti apel, stroberi, serta berbagai jenis sayuran, termasuk kentang, wortel, dan kubis.
+                Malang terletak di wilayah pegunungan yang dikenal dengan tanahnya yang subur, berkat keberadaan gunung-gunung berapi yang memberikan nutrisi alami pada tanah. Ketinggian lahan tersebut, yang berkisar antara 700 hingga 2.000 meter di atas permukaan laut, menciptakan iklim sejuk dan ideal untuk budidaya tanaman-tanaman yang membutuhkan suhu dingin, seperti apel, stroberi, serta berbagai jenis sayuran, termasuk kentang, wortel, dan kubis.
             </p>
             <div class="about__btn">
                 <a href="#">
@@ -120,7 +121,7 @@
             <h3 class="section__subheader">Kesuksesan Pertanian</h3>
             <h2 class="section__header">Hasil Pertanian Malang</h2>
             <p>
-            Malang telah mencapai kesuksesan yang signifikan berkat berbagai faktor seperti kondisi alam yang ideal, penerapan teknologi modern, dan inovasi di sektor pertanian. Daerah ini dikenal sebagai salah satu pusat pertanian terkemuka di Jawa Timur, dengan beragam komoditas unggulan seperti apel, jeruk, kentang, wortel, cabai, serta kopi dan teh. Kesuburan tanah vulkanik dan iklim yang sejuk, terutama di dataran tinggi seperti Kota Batu dan Poncokusumo, mendukung produktivitas pertanian yang tinggi.
+                Malang telah mencapai kesuksesan yang signifikan berkat berbagai faktor seperti kondisi alam yang ideal, penerapan teknologi modern, dan inovasi di sektor pertanian. Daerah ini dikenal sebagai salah satu pusat pertanian terkemuka di Jawa Timur, dengan beragam komoditas unggulan seperti apel, jeruk, kentang, wortel, cabai, serta kopi dan teh. Kesuburan tanah vulkanik dan iklim yang sejuk, terutama di dataran tinggi seperti Kota Batu dan Poncokusumo, mendukung produktivitas pertanian yang tinggi.
             </p>
             <div class="about__btn">
                 <a href="#">
@@ -138,33 +139,33 @@
     <div class="section__container footer__container">
         <div class="footer__col">
             <div class="logo footer__logo">
-                <a href="#">MNTN</a>
+                <a href="#">InFarm</a>
             </div>
             <p>
-                Get out there & discover your next slope, mountains & destination!
+                Start investing and farming with us
             </p>
         </div>
         <div class="footer__col">
             <h4>More on The Blog</h4>
             <ul class="footer__links">
-                <li><a href="#">About MNTN</a></li>
-                <li><a href="#">Contributors & Writers</a></li>
+                <li><a href="#">About InFarm</a></li>
+                <!-- <li><a href="#">Contributors & Writers</a></li> -->
                 <li><a href="#">Write For Us</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
         </div>
         <div class="footer__col">
-            <h4>More on MNTN</h4>
+            <h4>More on InFarm</h4>
             <ul class="footer__links">
-                <li><a href="#">The Team</a></li>
+                <!-- <li><a href="#">The Team</a></li> -->
                 <li><a href="#">Jobs</a></li>
-                <li><a href="#">Press</a></li>
+                <li><a href="#">About Investing</a></li>
             </ul>
         </div>
     </div>
     <div class="footer__bar">
-        Copyright © 2024 Web Design Mastery. All rights reserved.
+        Copyright © 2024 Web Design PlayIt. All rights reserved.
     </div>
 </footer>
 
