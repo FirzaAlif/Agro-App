@@ -37,8 +37,8 @@
              </nav>
              <div class="section__container header__container">
                  <div class="header__content">
-                     <h3 class="section__subheader">Welcome To Agro Malang</h3>
-                     <h1 class="section__header"><span id="typed"></span></h1>
+                     <h3 class="section__subheader"><span id="typed"></span></h3>
+                     <h1 class="section__header">Menghubungkan petani lokal dengan konsumen untuk produk pertanian khas Malang</h1>
                      <div class="scroll__btn">
                          <a href="#about">
                              Scroll down

@@ -106,7 +106,7 @@ ScrollReveal().reveal(".about__content .about__btn", {
 
 //typed js
 var options = {
-    strings: ["Menghubungkan petani lokal dengan konsumen untuk produk pertanian khas Malang"],
+    strings: ["Welcome To Agro Malang"],
     typeSpeed: 50, // Speed of typing
     backSpeed: 25, // Speed of backspacing (if needed)
     loop: true,   // Disable looping
