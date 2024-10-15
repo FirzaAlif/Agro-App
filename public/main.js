@@ -1,3 +1,34 @@
+// Count js
+
+function startCount() {
+  let valueDisplays = document.querySelectorAll(".num");
+  let interval = 4000; // Durasi total animasi dalam milidetik
+
+  valueDisplays.forEach((valueDisplay) => {
+      let startValue = 0;
+      let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+      let duration = Math.floor(interval / endValue);
+      let counter = setInterval(function() {
+          startValue += 1;
+          valueDisplay.textContent = startValue;
+          if (startValue === endValue) {
+              clearInterval(counter);
+          }
+      }, duration);
+  });
+}
+
+// Memanggil fungsi untuk memulai penghitungan saat elemen terlihat
+let hasStarted = false; // Untuk memastikan animasi hanya dipanggil sekali
+window.addEventListener('scroll', function() {
+  const countersSection = document.querySelector('.flex.justify-center.gap-10.mt-6'); // Ganti selector sesuai kebutuhan
+  const sectionPosition = countersSection.getBoundingClientRect().top;
+
+  if (!hasStarted && sectionPosition < window.innerHeight) {
+      startCount();
+      hasStarted = true; // Set flag agar tidak dijalankan lagi
+  }
+});
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
@@ -72,4 +103,17 @@ ScrollReveal().reveal(".about__content .about__btn", {
     ...scrollRevealOption,
     delay: 2000,
 });
+
+//typed js
+var options = {
+    strings: ["Menghubungkan petani lokal dengan konsumen untuk produk pertanian khas Malang"],
+    typeSpeed: 50, // Speed of typing
+    backSpeed: 25, // Speed of backspacing (if needed)
+    loop: true,   // Disable looping
+    showCursor: true, // Show the cursor
+    cursorChar: '|', // Customize the cursor character
+  };
+
+  var typed = new Typed("#typed", options);
+
 

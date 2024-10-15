@@ -7,6 +7,8 @@
      <title>InFarm Navigation</title>
      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
      <link rel="stylesheet" href="{{asset('/style.css')}}">
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+     <script src="https://cdn.tailwindcss.com"></script>
  </head>
 
  <header>
@@ -35,10 +37,8 @@
              </nav>
              <div class="section__container header__container">
                  <div class="header__content">
-                     <h3 class="section__subheader">A Harvest Tech Inovation</h3>
-                     <h1 class="section__header">
-                         Be Prepared For The Harvest Beyond!
-                     </h1>
+                     <h3 class="section__subheader">Welcome To Agro Malang</h3>
+                     <h1 class="section__header"><span id="typed"></span></h1>
                      <div class="scroll__btn">
                          <a href="#about">
                              Scroll down
@@ -118,7 +118,34 @@
              </div>
          </div>
      </div>
+
+     <div class="flex justify-center gap-10 mt-6" data-aos="fade-up">
+            <!-- Counter 1 -->
+            <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+                <span class="num text-4xl font-bold text-sky-100" data-val="500">000</span>
+                <p class="text-stone-300">Jumlah Petani</p>
+            </div>
+
+            <!-- Counter 2 -->
+            <div class="text-center" data-aos="zoom-in" data-aos-delay="400">
+                <span class="num text-4xl font-bold text-sky-100" data-val="300">000</span>
+                <p class="text-stone-300">Jumlah Lahan</p>
+            </div>
+
+            <!-- Counter 3 -->
+            <div class="text-center" data-aos="zoom-in" data-aos-delay="500">
+                <span class="num text-4xl font-bold text-sky-100" data-val="200">000</span>
+                <p class="text-stone-300">Jumlah Investor</p>
+            </div>
+
+            <!-- Counter 4 -->
+            <div class="text-center" data-aos="zoom-in" data-aos-delay="600">
+                <span class="num text-4xl font-bold text-sky-100" data-val="150">000</span>
+                <p class="text-stone-300">Invest Complete</p>
+            </div>
+        </div>
  </section>
+
 
  <footer class="footer">
      <div class="section__container footer__container">
