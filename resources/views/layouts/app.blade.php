@@ -28,6 +28,7 @@
             background-color: #f8f9fa;
             padding-top: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: width 0.3s;
         }
 
         .sidebar a {
@@ -35,33 +36,40 @@
             color: #000;
             padding: 10px;
             text-decoration: none;
+            transition: background-color 0.3s;
         }
 
-        .sidebar a:hover {
-            background-color: #ddd;
-        }
+        
 
         /* Konten utama harus bergeser ke kanan untuk mengakomodasi sidebar */
         .main-content {
             margin-left: 260px; /* Sesuaikan dengan lebar sidebar */
             padding: 20px;
         }
+
         .navbar {
             width: calc(100% - 260px); /* Sesuaikan dengan lebar sidebar */
             position: fixed;
             top: 0;
             left: 260px;
-            background-color: #f8f9fa;
-            padding: 30px 30px;
+            background-color: #343a40; /* Warna navbar */
+            color: white; /* Warna teks navbar */
+            padding: 15px 30px;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             z-index: 1000;
         }
-        .navbar a{
+
+        .navbar a {
             text-decoration: none;
-            color: #000;
+            color: white; /* Warna teks link navbar */
+            margin-left: 20px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline; /* Garis bawah saat hover */
         }
 
         /* Untuk tampilan mobile */
@@ -75,6 +83,7 @@
             .main-content {
                 margin-left: 0;
             }
+
             .navbar {
                 width: 100%;
                 left: 0;
@@ -86,36 +95,37 @@
     <div id="app">
         <!-- Sidebar -->
         <div class="sidebar">
-            <a href="{{ url('/') }}">
-                {{ config('app.name', 'Laravel') }}
-            </a>
-            
-            <!-- Authentication Links -->
-            
-        </div>
-        <div class="navbar">
-            @auth
-            <div class="dropdown">
-                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                    {{ Auth::user()->name }}
-                </a>
-                <div class="dropdown-menu dropdown-menu-end">
-                    <a class="dropdown-item" href="{{ route('logout') }}"
-                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        {{ __('Logout') }}
-                    </a>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                        @csrf
-                    </form>
-                </div>
+            <div class="text-center mb-3">
+                <h3><a href="{{ url('/') }}" style="text-decoration: none; ">{{ config('app.name', 'Laravel') }}</a></h3>
             </div>
-            @endauth
+            <a href="{{ route('farmers.index') }}">Daftar Petani</a>
+            <!-- Tambahkan lebih banyak tautan sesuai kebutuhan -->
         </div>
-        
+
+        <div class="navbar">
+            <div>
+                @auth
+                <div class="dropdown" style="display: inline-block;">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        {{ Auth::user()->name }}
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </div>
+                </div>
+                @endauth
+            </div>
+        </div>
 
         <!-- Konten Utama -->
         <div class="main-content">
-            <main class="py-4 mt-4" >
+            <main class="py-4 mt-4">
                 @yield('content')
             </main>
         </div>
