@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('photo')->nullable();
             $table->string('name');
-            $table->string('lokasi');
-            $table->string('bibit');
+            $table->string('location');
+            $table->string('seed');
             $table->timestamps();
         });
     }

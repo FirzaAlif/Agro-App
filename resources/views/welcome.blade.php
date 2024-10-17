@@ -39,7 +39,9 @@
             <div class="section__container header__container">
                 <div class="header__content">
                     <h3 class="section__subheader"><span id="typed"></span></h3>
-                    <h1 class="section__header">Menghubungkan petani lokal dengan konsumen untuk produk pertanian khas Malang</h1>
+                    <div class="section__header">
+                        <h1>Menghubungkan petani lokal dengan konsumen untuk produk pertanian khas Malang</h1>
+                    </div>
                     <div class="scroll__btn">
                         <a href="#about">
                             Scroll For More
@@ -56,7 +58,7 @@
         </div>
 </header>
 <section class="about">
-    <div class="flex justify-center gap-10 mt-6" data-aos="fade-up">
+    <div class="count flex justify-center gap-10 mt-6" data-aos="fade-up">
         <!-- Counter 1 -->
         <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
             <span class="num text-4xl font-bold text-sky-100" data-val="500">000</span>

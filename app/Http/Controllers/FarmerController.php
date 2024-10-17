@@ -22,7 +22,7 @@ class FarmerController extends Controller
      */
     public function create()
     {
-        //
+        return view('farmers.create');
     }
 
     /**
@@ -30,13 +30,8 @@ class FarmerController extends Controller
      */
     public function store(StoreFarmerRequest $request)
     {
-        Farmer::create([
-            'name' => $request->name,
-            'age' => $request->age,
-            'experience' => $request->experience,
-            'assets' => $request->assets,
-            'relation' => $request->relation
-        ]);
+       Farmer::create($request()->all);
+       return redirect()->route('farmers.index')->with('success', 'Farmer created successfully');
     }
 
     /**
