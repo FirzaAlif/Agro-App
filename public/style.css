@@ -394,15 +394,15 @@ nav {
         display: flex;
     }
     .about__content-1 .section__subheader::after {
-        
+        font-size: 70px;
         margin-left: 25px;
     }
     .about__content-2 .section__subheader::after {
-        
+        font-size: 70px;
         margin-left: 25px;
     }
     .about__content-3 .section__subheader::after {
-        font-size: 30px;
+        font-size: 70px;
         margin-left: 25px;
     }
 
@@ -438,6 +438,15 @@ nav {
     .nav__links {
         position: static;
         padding: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: transparent;
+    }
+    .nav__links.open {
+        display: flex;
+        animation: show-nav 0.3s linear forwards;
+        
     }
 
     .header__content {
@@ -473,28 +482,82 @@ nav {
     }
     
     .about__content-1 .section__subheader::after {
-        font-size: 40px;
+        font-size: 30px;
         margin-left: 25px;
     }
     .about__content-2 .section__subheader::after {
-        font-size: 40px;
+        font-size: 30px;
         margin-left: 25px;
     }
     .about__content-3 .section__subheader::after {
-        font-size: 40px;
+        font-size: 30px;
         margin-left: 25px;
     }
     
 } 
 
 @media (max-width: 375px) {
-    .nav__logo {
-        flex: 1;
-    }
-
     .nav__links {
-        position: static;
-        padding: 0;
+        position: absolute;
+        right: 1rem;
+        top: 68px;
+        width: calc(100% - 2rem);
+        /* max-width: 350px; */
+        padding: 2rem;
+        list-style: none;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: rgba(10, 30, 39, 0.8);
+        border-radius: 10px;
+    }
+    
+    .nav__links.open {
+        display: flex;
+        animation: show-nav 0.3s linear forwards;
+    }
+    
+    .nav__links.close {
+        animation: hide-nav 0.3s linear forwards;
+    }
+    
+    @keyframes show-nav {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes hide-nav {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    .nav__links a {
+        font-weight: 500;
+        color: var(--white);
+    }
+    
+    .nav__links a:hover {
+        color: var(--secondary-color);
+    }
+    
+    .nav__menu__btn {
+        font-size: 1.5rem;
+        color: var(--white);
+        cursor: pointer;
+    }
+    
+    .nav__action__btn {
+        display: none;
     }
 
     .header__content {
@@ -544,13 +607,67 @@ nav {
 }
 
 @media (max-width: 425px) {
-    .nav__logo {
-        flex: 1;
-    }
-
     .nav__links {
-        position: static;
-        padding: 0;
+        position: absolute;
+        right: 1rem;
+        top: 68px;
+        width: calc(100% - 2rem);
+        /* max-width: 350px; */
+        padding: 2rem;
+        list-style: none;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: rgba(10, 30, 39, 0.8);
+        border-radius: 10px;
+    }
+    
+    .nav__links.open {
+        display: flex;
+        animation: show-nav 0.3s linear forwards;
+    }
+    
+    .nav__links.close {
+        animation: hide-nav 0.3s linear forwards;
+    }
+    
+    @keyframes show-nav {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes hide-nav {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    .nav__links a {
+        font-weight: 500;
+        color: var(--white);
+    }
+    
+    .nav__links a:hover {
+        color: var(--secondary-color);
+    }
+    
+    .nav__menu__btn {
+        font-size: 1.5rem;
+        color: var(--white);
+        cursor: pointer;
+    }
+    
+    .nav__action__btn {
+        display: none;
     }
 
     .header__content {
