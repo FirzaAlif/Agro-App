@@ -14,8 +14,15 @@
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
+        },
+        {
+            "src": "/style.css/",
+            "dest": "/public/"
+        },
+        {
+            "src": "/main.js/",
+            "dest": "/public/"
         }
-
     ],
     "public": true,
     "buildCommand": "vite build",
