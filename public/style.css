@@ -688,6 +688,7 @@ nav {
     }
 }
 
+
 @media (max-width: 425px) {
     .nav__links {
         position: absolute;
@@ -812,3 +813,4 @@ nav {
         margin-left: 25px;
     }
 }
+
