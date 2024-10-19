@@ -91,7 +91,12 @@
             <h3 class="section__subheader">Tentang Petani Malang</h3>
             <h2 class="section__header">Petani Unggul</h2>
             <p>
-                Para petani yang berasal dari Malang, sebuah kota di Jawa Timur, Indonesia, yang dikenal dengan lahan pertaniannya yang subur. Petani di Malang memiliki peran penting dalam perekonomian lokal, dengan menanam berbagai macam hasil bumi berkat iklim yang mendukung dan tanah vulkanik yang kaya. Beberapa komoditas yang dihasilkan antara lain buah-buahan seperti apel, jeruk, serta beragam sayuran yang sering didistribusikan ke berbagai wilayah di Indonesia. Daerah dataran tinggi Malang juga mendukung perkebunan kopi dan teh, serta dikenal sebagai penghasil produk organik.
+                Para petani yang berasal dari Malang, sebuah kota di Jawa Timur, Indonesia, yang dikenal dengan lahan
+                pertaniannya yang subur. Petani di Malang memiliki peran penting dalam perekonomian lokal, dengan
+                menanam berbagai macam hasil bumi berkat iklim yang mendukung dan tanah vulkanik yang kaya. Beberapa
+                komoditas yang dihasilkan antara lain buah-buahan seperti apel, jeruk, serta beragam sayuran yang sering
+                didistribusikan ke berbagai wilayah di Indonesia. Daerah dataran tinggi Malang juga mendukung perkebunan
+                kopi dan teh, serta dikenal sebagai penghasil produk organik.
             </p>
             <div class="about__btn">
                 <a href="#">
@@ -107,7 +112,11 @@
             <h3 class="section__subheader">Keunggulan Lahan</h3>
             <h2 class="section__header">Lahan Yang Berkualitas</h2>
             <p>
-                Malang terletak di wilayah pegunungan yang dikenal dengan tanahnya yang subur, berkat keberadaan gunung-gunung berapi yang memberikan nutrisi alami pada tanah. Ketinggian lahan tersebut, yang berkisar antara 700 hingga 2.000 meter di atas permukaan laut, menciptakan iklim sejuk dan ideal untuk budidaya tanaman-tanaman yang membutuhkan suhu dingin, seperti apel, stroberi, serta berbagai jenis sayuran, termasuk kentang, wortel, dan kubis.
+                Malang terletak di wilayah pegunungan yang dikenal dengan tanahnya yang subur, berkat keberadaan
+                gunung-gunung berapi yang memberikan nutrisi alami pada tanah. Ketinggian lahan tersebut, yang berkisar
+                antara 700 hingga 2.000 meter di atas permukaan laut, menciptakan iklim sejuk dan ideal untuk budidaya
+                tanaman-tanaman yang membutuhkan suhu dingin, seperti apel, stroberi, serta berbagai jenis sayuran,
+                termasuk kentang, wortel, dan kubis.
             </p>
             <div class="about__btn">
                 <a href="#">
@@ -123,7 +132,11 @@
             <h3 class="section__subheader">Kesuksesan Pertanian</h3>
             <h2 class="section__header">Hasil Pertanian Malang</h2>
             <p>
-                Malang telah mencapai kesuksesan yang signifikan berkat berbagai faktor seperti kondisi alam yang ideal, penerapan teknologi modern, dan inovasi di sektor pertanian. Daerah ini dikenal sebagai salah satu pusat pertanian terkemuka di Jawa Timur, dengan beragam komoditas unggulan seperti apel, jeruk, kentang, wortel, cabai, serta kopi dan teh. Kesuburan tanah vulkanik dan iklim yang sejuk, terutama di dataran tinggi seperti Kota Batu dan Poncokusumo, mendukung produktivitas pertanian yang tinggi.
+                Malang telah mencapai kesuksesan yang signifikan berkat berbagai faktor seperti kondisi alam yang ideal,
+                penerapan teknologi modern, dan inovasi di sektor pertanian. Daerah ini dikenal sebagai salah satu pusat
+                pertanian terkemuka di Jawa Timur, dengan beragam komoditas unggulan seperti apel, jeruk, kentang,
+                wortel, cabai, serta kopi dan teh. Kesuburan tanah vulkanik dan iklim yang sejuk, terutama di dataran
+                tinggi seperti Kota Batu dan Poncokusumo, mendukung produktivitas pertanian yang tinggi.
             </p>
             <div class="about__btn">
                 <a href="#">
@@ -136,6 +149,59 @@
 
 </section>
 
+<section class="farms section__container" id="farm">
+    <div class="section__header">Daftar Lahan Pertanian</div>
+    <div class="farm__cards">
+        <!-- Card 1 -->
+        <div class="farm__card" style="background-image: url('images/dau.jpeg');">
+            <div class="farm__overlay">
+                <div class="farm__info">
+                    <h3>Lahan Pertanian Dau</h3>
+                    <p>Menanam hortikultura seperti wortel, tomat, dan cabai. Terkenal dengan produk sayur segar.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="farm__card" style="background-image: url('images/karangploso.jpeg');">
+            <div class="farm__overlay">
+                <div class="farm__info">
+                    <h3>Lahan Pertanian Karangploso</h3>
+                    <p>Menanam hortikultura seperti wortel, tomat, dan cabai. Terkenal dengan produk sayur segar.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="farm__card" style="background-image: url('images/wagir.jpeg');">
+            <div class="farm__overlay">
+                <div class="farm__info">
+                    <h3>Lahan Pertanian Wagir</h3>
+                    <p>Menanam hortikultura seperti wortel, tomat, dan cabai. Terkenal dengan produk sayur segar.</p>
+                </div>
+            </div>
+        </div>
+        <div class="farm__card" style="background-image: url('images/wagir.jpeg');">
+            <div class="farm__overlay">
+                <div class="farm__info">
+                    <h3>Lahan Pertanian Wagir</h3>
+                    <p>Menanam hortikultura seperti wortel, tomat, dan cabai. Terkenal dengan produk sayur segar.</p>
+                </div>
+            </div>
+        </div>
+        <div class="farm__card" style="background-image: url('images/wagir.jpeg');">
+            <div class="farm__overlay">
+                <div class="farm__info">
+                    <h3>Lahan Pertanian Wagir</h3>
+                    <p>Menanam hortikultura seperti wortel, tomat, dan cabai. Terkenal dengan produk sayur segar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 <footer class="footer">
     <div class="section__container footer__container">
@@ -144,25 +210,16 @@
                 <a href="#">InFarm</a>
             </div>
             <p>
-                Start investing and farming with us
+                mulai investasi pertanian anda
             </p>
         </div>
         <div class="footer__col">
-            <h4>More on The Blog</h4>
+            <h4>Lainya</h4>
             <ul class="footer__links">
-                <li><a href="#">About InFarm</a></li>
+                <li><a href="#about">Tentang InFarm</a></li>
                 <!-- <li><a href="#">Contributors & Writers</a></li> -->
-                <li><a href="#">Write For Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-        </div>
-        <div class="footer__col">
-            <h4>More on InFarm</h4>
-            <ul class="footer__links">
-                <!-- <li><a href="#">The Team</a></li> -->
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">About Investing</a></li>
+                <li><a href="#farm">Lahan Pertanian</a></li>
+                <li><a href="#">Hubungi Kami</a></li>
             </ul>
         </div>
     </div>
