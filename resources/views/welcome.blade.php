@@ -185,7 +185,7 @@
         <div class="farm__card" style="background-image: url('images/wagir.jpeg');">
             <div class="farm__overlay">
                 <div class="farm__info">
-                    <h3>Lahan Pertanian Wagir</h3>
+                    <h3>Lahan Pertanian Poncokusumo</h3>
                     <p>Menanam hortikultura seperti wortel, tomat, dan cabai. Terkenal dengan produk sayur segar.</p>
                 </div>
             </div>
@@ -193,7 +193,15 @@
         <div class="farm__card" style="background-image: url('images/wagir.jpeg');">
             <div class="farm__overlay">
                 <div class="farm__info">
-                    <h3>Lahan Pertanian Wagir</h3>
+                    <h3>Lahan Pertanian Pujon</h3>
+                    <p>Menanam hortikultura seperti wortel, tomat, dan cabai. Terkenal dengan produk sayur segar.</p>
+                </div>
+            </div>
+        </div>
+        <div class="farm__card" style="background-image: url('images/wagir.jpeg');">
+            <div class="farm__overlay">
+                <div class="farm__info">
+                    <h3>Lahan Pertanian Wonosari</h3>
                     <p>Menanam hortikultura seperti wortel, tomat, dan cabai. Terkenal dengan produk sayur segar.</p>
                 </div>
             </div>
