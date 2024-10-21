@@ -16,11 +16,11 @@
             "dest": "/api/index.php"
         },
         {
-            "src": "style.css",
+            "src": "/(.*)",
             "dest": "/public/style.css"
           },
           {
-            "src": "main.js",
+            "src": "/(.*)",
             "dest": "/public/main.js"
           }
     ],
